@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Product Card UI Design</title>
-	<meta charset = "UTF-8" />
-	<link rel="stylesheet" type="text/css" href="product-style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset = "UTF-8"/>
+	<title>Responsive Portfolio Landing Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+	<section class="banner" id="sec">
 
-	<div class="container">
-		<div class="card">
-			<div class="imgBx">
-				<img src="tenis.png">
-			</div>
+		<header>
+			<a href="#" class="logo">Logo</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
 
-			<div class="contentBx">
-				<h2>Nike Shoes</h2>
-				<div class="size">
-					<h3>Size:</h3>
-					<span>7</span>
-					<span>8</span>
-					<span>9</span>
-					<span>10</span>
-				</div>
-
-				<a href="#">Buy Now</a>
-			</div>
-
+		<div class="content">
+			<h2>Hello World, <br> I'm <span>Lucas Cabral</span></h2>
+			<p> MSc in Computer Science at the Universidade Federal de Campina Grande (2020). 
+			 </p>
+			<a href="#">Know More</a>
 		</div>
+
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+		</ul>
+
+	</section>
+
+	<section class="banner2" id="sec2">
+
+	
+
+	</section>
+
+
+	<div id="navigation">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
 	</div>
+
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var sec2 = document.getElementById('sec2');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			sec2.classList.toggle('active');
+			nav.classList.toggle('active');
+
+		}
+
+
+	</script>
+
+
 </body>
+
 </html>
